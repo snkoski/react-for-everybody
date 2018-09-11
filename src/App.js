@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import {hot} from 'react-hot-loader';
 import PropTypes from 'prop-types';
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
+import ContactsList from './components/ContactsList';
 
 class App extends Component {
   render () {
     return (
       <div className="App">
-        <HelloWorld name="Shawn" isPerson={true}/>
+        <h1>Contacts List</h1>
+        <ContactsList />
+        {/* <HelloWorld name="Shawn" isPerson={true}/> */}
       </div>
     )
   }
